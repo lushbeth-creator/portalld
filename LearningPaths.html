@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LearningPaths</title>
+<style>
+:root{--blue:#5D70AE;--green:#59A398;--light:#DAF3EF;--purple:#A6B3D5;--pale:#F3F6FF;--navy:#1B2F5B;--ink:#000}
+*{box-sizing:border-box}
+html,body{background:transparent}
+body{margin:0;padding:14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy)}
+h1,h2,h3{font-family:"Qualy Neue",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:100%;margin:0}
+.eyebrow{display:block;margin:0 0 6px;color:var(--green);font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.intro{margin:0;color:var(--ink);font-size:18px;line-height:1.55}
+.head{margin:0 0 18px}
+.icon-box{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(to bottom,#F3F6FF 0%,#E4E9F7 100%);border:1px solid #A6B3D5;color:#59A398}
+.icon-box svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card{position:relative;border:1px solid var(--purple);border-radius:14px;background:linear-gradient(to bottom,#ffffff 0%,#E8EDF8 100%);color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.card:hover,a.card:focus-visible{transform:scale(1.015);border-color:var(--green);background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%);outline:none}
+.card.primary{background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%)}
+.label{display:block;margin-bottom:2px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.card h2{margin:0;font-size:20px;line-height:1.25;font-weight:700;color:var(--navy)}
+.card p{margin:0;color:var(--ink);font-size:14px;line-height:1.5}
+.action{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--blue);font-size:14px;font-weight:800;white-space:nowrap}
+.action svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+a.card:hover .action{color:var(--green)}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.btn-solid{display:inline-block;background:var(--blue);color:#fff;font-size:14px;font-weight:700;padding:11px 18px;border-radius:8px;text-decoration:none}
+.btn-solid:hover,.btn-solid:focus-visible{background:var(--navy);outline:none}
+.btn-outline{display:inline-block;background:#fff;color:var(--navy);font-size:14px;font-weight:700;padding:11px 18px;border-radius:8px;border:1px solid var(--purple);text-decoration:none}
+.btn-outline:hover,.btn-outline:focus-visible{background:var(--pale);outline:none}
+.text-link{color:var(--green);font-weight:750;text-decoration:none}
+.text-link:hover,.text-link:focus-visible{color:var(--blue);text-decoration:underline}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.card:hover,a.card:focus-visible{transform:none!important}}
+
+h1{margin:0 0 8px;color:var(--navy);font-size:20px;line-height:1.25;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{display:flex;flex-direction:column;padding:20px}
+.card .icon-box{margin-bottom:14px}
+.card h2{margin-bottom:6px}
+.footer{margin-top:18px;padding-top:15px;border-top:1px solid rgba(93,112,174,.14)}
+.footer p{margin:0;color:var(--ink);font-size:18px;line-height:1.5}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+@media(max-width:680px){body{padding:8px}}
+</style>
+</head>
+<body>
+<!-- TODO links: the six learning area cards are not linked yet. Wrap each in an <a class="card" href=...> when the destination pages are ready. -->
+<main>
+<div class="head">
+  <span class="eyebrow">Explore Learning</span>
+  <h1>What do you want to learn?</h1>
+  <p class="intro">Choose a learning area based on the knowledge or skill you want to build. Company information, policies and day-to-day resources remain in the Employee Portal.</p>
+</div>
+<div class="grid">
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20"/><path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><h2>Payments Knowledge</h2><p>Build your understanding of the payments ecosystem, transaction flow, terminology, risk, fraud and the fundamentals behind our industry.</p></div>
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span><h2>Sales &amp; Merchant Conversations</h2><p>Develop practical skills for prospecting, discovery, presenting value, navigating decisions, follow-up and merchant relationships.</p></div>
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></span><h2>Solutions &amp; Technology</h2><p>Learn how our solutions work, where they fit and how the technology behind the merchant experience connects across Propelr.</p></div>
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h2>Professional Skills</h2><p>Strengthen communication, presentation, organization, productivity and other skills that help you be more effective in your role.</p></div>
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span><h2>Leadership &amp; Coaching</h2><p>Build skills for leading people, coaching performance, giving feedback, developing talent and creating stronger teams.</p></div>
+  <div class="card"><span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><h2>Cross-Functional Learning</h2><p>Learn what happens outside your own department and how teams such as Operations, Underwriting and Technology contribute to the merchant lifecycle.</p></div>
+</div>
+<div class="footer">
+  <p>Share your career goals with Learning &amp; Development and cc your leader on the email. We can enroll you in an eLearning course or help steer you in the right direction.</p>
+</div>
+</main>
+
+</body>
+</html>
