@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PartnerWithLD</title>
+<style>
+:root{--blue:#5D70AE;--green:#59A398;--light:#DAF3EF;--purple:#A6B3D5;--pale:#F3F6FF;--navy:#1B2F5B;--ink:#000}
+*{box-sizing:border-box}
+html,body{background:transparent}
+body{margin:0;padding:14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy)}
+h1,h2,h3{font-family:"Qualy Neue",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:100%;margin:0}
+.eyebrow{display:block;margin:0 0 6px;color:var(--green);font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.intro{margin:0;color:var(--ink);font-size:18px;line-height:1.55}
+.head{margin:0 0 18px}
+.icon-box{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(to bottom,#F3F6FF 0%,#E4E9F7 100%);border:1px solid #A6B3D5;color:#59A398}
+.icon-box svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card{position:relative;border:1px solid var(--purple);border-radius:14px;background:linear-gradient(to bottom,#ffffff 0%,#E8EDF8 100%);color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.card:hover,a.card:focus-visible{transform:scale(1.015);border-color:var(--green);background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%);outline:none}
+.card.primary{background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%)}
+.label{display:block;margin-bottom:2px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.card h2{margin:0;font-size:20px;line-height:1.25;font-weight:700;color:var(--navy)}
+.card p{margin:0;color:var(--ink);font-size:14px;line-height:1.5}
+.action{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--blue);font-size:14px;font-weight:800;white-space:nowrap}
+.action svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+a.card:hover .action{color:var(--green)}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.btn-solid{display:inline-block;background:var(--blue);color:#fff;font-size:14px;font-weight:700;padding:11px 18px;border-radius:8px;text-decoration:none}
+.btn-solid:hover,.btn-solid:focus-visible{background:var(--navy);outline:none}
+.btn-outline{display:inline-block;background:#fff;color:var(--navy);font-size:14px;font-weight:700;padding:11px 18px;border-radius:8px;border:1px solid var(--purple);text-decoration:none}
+.btn-outline:hover,.btn-outline:focus-visible{background:var(--pale);outline:none}
+.text-link{color:var(--green);font-weight:750;text-decoration:none}
+.text-link:hover,.text-link:focus-visible{color:var(--blue);text-decoration:underline}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.card:hover,a.card:focus-visible{transform:none!important}}
+
+h1{margin:0 0 8px;color:var(--navy);font-size:20px;line-height:1.25;font-weight:700}
+.panel{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:center;padding:26px 28px;border:1px solid var(--purple);border-radius:20px;background:linear-gradient(135deg,#ffffff 0%,#F3FAF9 45%,#DAF3EF 100%)}
+.panel .intro{margin:0 0 20px}
+.panel .btn-row{margin-top:0}
+.options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-self:center}
+.card.opt{display:flex;flex-direction:column;padding:18px 18px 22px;background:#fff}
+.card.opt h2{margin:0 0 8px;font-size:16px}
+.card.opt p{font-size:14px;line-height:1.55}
+@media(max-width:1000px){.panel{grid-template-columns:1fr;gap:22px}}
+@media(max-width:680px){body{padding:8px}.panel{padding:20px 18px}.options{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- The three option cards are informational for now. Link them (for example to mailto: with a subject) if you want each one to start a request. -->
+<main>
+<section class="panel">
+  <div>
+    <span class="eyebrow">Partner with Learning &amp; Development</span>
+    <h1>How can L&amp;D help?</h1>
+    <p class="intro">Training isn&rsquo;t always the answer. If your team is experiencing a knowledge or performance gap, onboarding someone new, introducing a change or preparing employees for something new, connect with L&amp;D and we&rsquo;ll determine the right support together.</p>
+    <div class="btn-row"><a class="btn-solid" href="mailto:learning@propelrpay.com">Connect with L&amp;D</a></div>
+  </div>
+  <div class="options">
+    <div class="card opt"><h2>Request Training</h2><p>There&rsquo;s something my team needs to learn.</p></div>
+    <div class="card opt"><h2>Build an Onboarding Plan</h2><p>I&rsquo;m preparing to onboard someone new.</p></div>
+    <div class="card opt"><h2>Talk Through a Gap</h2><p>Something isn&rsquo;t working and I&rsquo;m not sure training is the answer.</p></div>
+  </div>
+</section>
+</main>
+
+</body>
+</html>
