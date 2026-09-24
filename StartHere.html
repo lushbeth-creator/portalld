@@ -9,17 +9,15 @@
 *{box-sizing:border-box}
 html,body{background:transparent}
 body{margin:0;padding:14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy)}
-h1,h2,h3{font-family:"Qualy Neue",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 main{max-width:100%;margin:0}
 .eyebrow{display:block;margin:0 0 6px;color:var(--green);font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .intro{margin:0;color:var(--ink);font-size:18px;line-height:1.55}
 .head{margin:0 0 18px}
 .icon-box{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(to bottom,#F3F6FF 0%,#E4E9F7 100%);border:1px solid #A6B3D5;color:#59A398}
 .icon-box svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.card{position:relative;border:1px solid var(--purple);border-radius:14px;background:linear-gradient(to bottom,#ffffff 0%,#E8EDF8 100%);color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease,background .18s ease}
-.card:hover,a.card:focus-visible{transform:scale(1.015);border-color:var(--green);background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%);outline:none}
-.card.primary{background:linear-gradient(to bottom,#ffffff 0%,var(--light) 100%)}
-.label{display:block;margin-bottom:2px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.card{position:relative;border:1px solid var(--purple);border-radius:14px;background:linear-gradient(to bottom,#ffffff 0%,#E8EDF8 100%);color:inherit;text-decoration:none;transition:border-color .18s ease}
+.card:hover,a.card:focus-visible{border-color:var(--green);outline:none}
 .card h2{margin:0;font-size:20px;line-height:1.25;font-weight:700;color:var(--navy)}
 .card p{margin:0;color:var(--ink);font-size:14px;line-height:1.5}
 .action{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--blue);font-size:14px;font-weight:800;white-space:nowrap}
@@ -30,11 +28,10 @@ a.card:hover .action{color:var(--green)}
 .btn-solid:hover,.btn-solid:focus-visible{background:var(--navy);outline:none}
 .btn-outline{display:inline-block;background:#fff;color:var(--navy);font-size:14px;font-weight:700;padding:11px 18px;border-radius:8px;border:1px solid var(--purple);text-decoration:none}
 .btn-outline:hover,.btn-outline:focus-visible{background:var(--pale);outline:none}
-.text-link{color:var(--green);font-weight:750;text-decoration:none}
-.text-link:hover,.text-link:focus-visible{color:var(--blue);text-decoration:underline}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}.card:hover,a.card:focus-visible{transform:none!important}}
+.text-link{color:var(--blue);font-weight:750;text-decoration:none}
+.text-link:hover,.text-link:focus-visible{color:var(--green);text-decoration:underline}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
-h1{margin:0 0 8px;color:var(--navy);font-size:20px;line-height:1.25;font-weight:700}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .card{display:flex;flex-direction:column;padding:20px}
 .card h2{margin-bottom:6px}
@@ -47,14 +44,12 @@ h1{margin:0 0 8px;color:var(--navy);font-size:20px;line-height:1.25;font-weight:
 <body>
 <main>
 <div class="head">
-  <span class="eyebrow">New to Propelr?</span>
-  <h1>Start here.</h1>
   <p class="intro">Your onboarding experience should help you understand Propelr, build confidence in your role and connect what you&rsquo;re learning to the work you&rsquo;ll actually do.</p>
 </div>
 <div class="cards">
-  <a class="card primary" href="https://bookings.cloud.microsoft/bookwithme/user/0eb0701c0ce2428db0d0472921a2a548@propelrpay.com/meetingtype/oGkv6MhP_kePxhezGQOplg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" target="_blank" rel="noopener noreferrer"><span class="label">All new employees</span><h2>Welcome to Propelr</h2><p>Connect with Learning &amp; Development for a quick introduction to the resources available to support you at Propelr. We&rsquo;ll get you access to our L&amp;D eLearning site, walk through the Employee Portal and make sure you know where to find the tools, training and support you need.</p><span class="action">Schedule Onboarding <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
-  <a class="card" href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/In-Flight-Training.aspx" target="_blank" rel="noopener noreferrer"><span class="label">Sales</span><h2>Pilot Onboarding</h2><p>Develop the payments, solution, system and merchant-conversation skills needed to confidently begin building your portfolio.</p><span class="action">Open Ground School <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
-  <a class="card" href="https://propelrpay1.sharepoint.com/sites/Employee-Portal/SitePages/hr.aspx" target="_blank" rel="noopener noreferrer"><span class="label">All employees</span><h2>HR Resources</h2><p>Find human resources information and support in the Employee Portal.</p><span class="action">Open HR Resources <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
+  <a class="card" href="https://bookings.cloud.microsoft/bookwithme/user/0eb0701c0ce2428db0d0472921a2a548@propelrpay.com/meetingtype/oGkv6MhP_kePxhezGQOplg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" target="_blank" rel="noopener noreferrer"><h2>Welcome to Propelr</h2><p>Meet with Learning &amp; Development for a quick introduction to the tools, training and support available to you.</p><span class="action">Schedule Onboarding <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
+  <a class="card" href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/In-Flight-Training.aspx" target="_blank" rel="noopener noreferrer"><h2>Pilot Onboarding</h2><p>Develop the payments, solution, system and merchant-conversation skills needed to confidently begin building your portfolio.</p><span class="action">Open Ground School <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
+  <a class="card" href="https://propelrpay1.sharepoint.com/sites/Employee-Portal/SitePages/hr.aspx" target="_blank" rel="noopener noreferrer"><h2>HR Resources</h2><p>Find human resources information and support in the Employee Portal.</p><span class="action">Open HR Resources <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span></a>
 </div>
 </main>
 
